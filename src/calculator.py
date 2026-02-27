@@ -12,9 +12,11 @@ def divide(a, b):
     # FIXME: ZeroDivisionError: what if b is 0?
     return a / b
 
-def multiply(a, b): #수정된 함수
-    # FIXME: TypeError: what if input is string '10'? 
-    return float(a) * float(b)
+def multiply(a, b): #수정된 함수.
+    try: 
+        return float(a) * float(b)
+    except ValueError:   #문자열이 들어왔을 경우 오류발생문구 추가.
+        return "Error: 숫자를 입력해주세요"
 
 def calculate_average(numbers):
     total = sum(numbers)
