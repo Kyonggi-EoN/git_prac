@@ -27,5 +27,5 @@ def mark_present(name):
 def get_daily_tuple():
     t = ("Monday", "Tuesday")
     # FIXME: AttributeError: 'tuple' object has no attribute 'append'
-    t.append("Wednesday")
+    t = t + ("Wednesday",)
     return t
