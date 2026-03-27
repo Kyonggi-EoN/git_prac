@@ -3,8 +3,7 @@ class Game:
         self.score = 0
 
     def start(self):
-        # FIXME: MethodCallError: self argument is not needed here
-        self.play_round(self)
+        self.play_round()
 
     def play_round(self):
         print("Playing...")
